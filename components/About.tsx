@@ -20,7 +20,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center sm:py-12 md:py-16 lg:py-20 bg-gradient-to-tr from-indigo-900 via-purple-900 to-black text-white"
+      className="min-h-screen flex flex-col justify-center items-center px-4 py-16 sm:py-12 bg-gradient-to-tr from-indigo-900 via-purple-900 to-black text-white"
     >
       {/* ✨ Trailing Animated Intro */}
       <div className="text-4xl font-extrabold flex flex-wrap justify-center text-center mb-8">
