@@ -5,16 +5,15 @@ const text = "I’m Mayowa David Ekundayo, a passionate Quality Assurance Engine
 
 const trailVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: (i: number) => ({
+  visible: { 
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.08,
-      type: 'spring',
+      type: "spring" as const,
       stiffness: 100,
       damping: 12,
     },
-  }),
+  },
 };
 
 export default function About() {
@@ -28,11 +27,17 @@ export default function About() {
         {text.map((word, index) => (
           <motion.span
             key={index}
-            custom={index}
             variants={trailVariants}
             initial="hidden"
             animate="visible"
+            transition={{
+              delay: index * 0.08,
+              type: "spring",
+              stiffness: 100,
+              damping: 12,
+            }}
             className="inline-block mx-1 bg-clip-text text-white"
+            style={{ display: 'inline-block' }}
           >
             {word}
           </motion.span>

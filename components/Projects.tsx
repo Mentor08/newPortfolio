@@ -48,7 +48,6 @@ export default function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       className="min-h-screen px-4 py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col items-center"
-      as="section"
     >
       <h2 className="text-4xl font-bold mb-14 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-400">
         My Work & Contributions
