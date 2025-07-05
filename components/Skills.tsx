@@ -36,7 +36,7 @@ export default function Skills() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen flex flex-col justify-center items-center px-4 py-16 bg-gradient-to-r from-indigo-900 via-purple-800 to-indigo-900 text-white"
+      className="min-h-screen flex flex-col justify-center items-center sm:py-12 md:py-16 lg:py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-indigo-900 text-white"
     >
       <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-400">
         Technical Arsenal
